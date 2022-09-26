@@ -44,6 +44,29 @@ git branch -M main
 git push -u origin main
 ```
 
+## Testing Methods
+
+Example Method:
+```
+# File: lib/add_five.rb
+def add_five(num)
+  return num + 5
+end
+```
+
+Example test for the method:
+```
+# File: spec/add_five_spec.rb
+require 'add_five'
+
+RSpec.describe "add_five method" do
+  it "adds 5 to 3 to return 8" do
+	result = add_five(3)
+	expect(result).to eq 8
+  end
+end
+```
+
 ## Exercises
 
 Write tests for the following methods
